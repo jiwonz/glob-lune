@@ -78,10 +78,10 @@ return function(pattern: string | { string }, option: Option?): { pathfs.Path }
 				end
 			end
 			local noCurDirVP = pathfs.withoutCurDir(vp)
-			local valid = true
+			local valid = false
 			for _, globRegex in globRegexes do
-				if not globRegex:test(noCurDirVP:toString()) then
-					valid = false
+				if globRegex:test(noCurDirVP:toString()) then
+					valid = true
 					break
 				end
 			end
