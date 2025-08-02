@@ -38,7 +38,7 @@ return function(pattern: string | { string }, option: Option?): { pathfs.Path }
 		if type(pattern) == "string" then
 			globRegexes = { (globrex(pattern, newGlobrexOption).path :: any).regex }
 		elseif type(pattern) == "table" then
-			globRegexes = pattern :: any
+			globRegexes = table.create(#pattern)
 			for i, v in pattern do
 				globRegexes[i] = (globrex(v, newGlobrexOption).path :: any).regex
 			end
