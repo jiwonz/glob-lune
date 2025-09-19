@@ -14,9 +14,9 @@ lib = "src/lib.luau"
 default = "https://github.com/pesde-pkg/index"
 
 [engines]
-lune = "^0.9.4"
-pesde = "^0.7.0-rc.1"
+lune = "^0.10.2"
+pesde = "^0.7.1"
 
 [dependencies]
-globrex_lune = { name = "kimpure/globrex_lune", version = "^0.2.4" }
-pathfs = { name = "jiwonz/pathfs", version = "^0.6.0-rc.3" }
+globrex_lune = { name = "kimpure/globrex_lune", version = "^0.2.9" }
+pathfs = { name = "jiwonz/pathfs", version = "^0.6.0" }
