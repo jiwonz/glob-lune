@@ -2,8 +2,7 @@
 `glob` implementation in luau for lune runtime heavily inspired by [glob](https://www.npmjs.com/package/glob)
 
 ## Prerequisites
-- **pesde**: `^0.10.2`
-- **lune**: `^0.7.1`
+- **lune**: `^0.10.2`
 
 ## Installation
 Install via pesde (Recommended)
