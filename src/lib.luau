@@ -22,7 +22,7 @@ export type Option = {
 	dotRelative: boolean?,
 }
 
-return function(pattern: string | { string }, option: Option?): { pathfs.Path }
+local function glob(pattern: string | { string }, option: Option?): { pathfs.Path }
 	local result = {}
 	local depth = 0
 	local newGlobrexOption = table.clone(globrexOption)
@@ -111,3 +111,5 @@ return function(pattern: string | { string }, option: Option?): { pathfs.Path }
 
 	return result
 end
+
+return glob
