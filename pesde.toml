@@ -1,5 +1,5 @@
 name = "jiwonz/glob"
-version = "0.1.2"
+version = "0.2.0"
 description = "glob/wildcard filtering utility for lune"
 authors = ["jiwonz <me@jiwonz.kr>"]
 repository = "https://github.com/jiwonz/glob-lune"
